@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.all-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .container {
+        max-width: 400px !important;
+        -webkit-box-shadow: 0px 1px 11px -1px rgba(250, 250, 250, 0.07);
+        -moz-box-shadow: 0px 1px 11px -1px rgba(250, 250, 250, 0.07);
+        box-shadow: 0px 1px 11px -1px rgba(250, 250, 250, 0.07);
+
+        .weather {
+
+            form {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                input {
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    order: none;
+                    color: white;
+                    padding: 5px 0px 5px 20px;
+                    font-style: italic;
+                    border: 1px solid white;
+                    border-radius: 50em;
+
+                }
+
+                input::placeholder {
+                    color: white;
+                    font-style: italic;
+                }
+
+                button {
+                    background: none;
+                    border: none;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .search-icon {
+                        color: white;
+                        font-size: 20px;
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .city-weather-information {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .content {
+                .city-name {
+                    font-size: 30px;
+                    font-weight: normal;
+                    color: white;
+                }
+
+                .image-png {
+                    width: 120px;
+                }
+
+                .temp {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 60px;
+                    color: white;
+                }
+
+                .speed-and-temp {
+                    display: flex;
+                    gap: 100px;
+                    color: white;
+
+                    .wind-icon {
+                        width: 20px;
+                        filter: invert(100%);
+                    }
+
+                    .humidity-image{
+                        width: 20px;
+                        filter: invert(100%);
+                    }
+                }
+            }
+
+        }
+    }
+}
